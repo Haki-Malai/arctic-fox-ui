@@ -1,14 +1,10 @@
-import React from 'react';
 import { TouchableOpacity, Image, StyleSheet } from 'react-native';
-
 
 export default function BackButton({ goBack }) {
   return (
     <TouchableOpacity onPress={goBack} style={styles.container}>
-      <Image
-        style={styles.image}
-        source={require('../assets/images/arrow_back.png')}
-      />
+      <Image style={styles.image}
+        source={require('../assets/images/arrow_back.png')} />
     </TouchableOpacity>
   )
 }
